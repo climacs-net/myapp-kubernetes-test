@@ -14,8 +14,8 @@ spec:
         app: myapp
     spec:
       containers:
-      - name: myapp
-        image: myapp:latest
+      - name: cat-website-app-intel
+        image: climacs/cat-website-app-intel
         ports:
         - containerPort: 80
 ---
