@@ -17,7 +17,7 @@ spec:
       - name: cat-website-app-intel
         image: climacs/cat-website-app-intel
         ports:
-        - containerPort: 80
+        - containerPort: 8000
 ---
 apiVersion: v1
 kind: Service
@@ -30,5 +30,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 80
+      targetPort: 8000
   type: LoadBalancer
